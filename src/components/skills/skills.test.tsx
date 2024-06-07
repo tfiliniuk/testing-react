@@ -4,7 +4,7 @@ import { Skills } from './skills'
 describe('Skills', () => {
   const skillsArray = ['HTML', 'CSS', 'JavaScript']
 
-  test('renders correctly', () => {
+  test('renders is correctly', () => {
     render(<Skills skills={skillsArray} />)
     const listElement = screen.getByRole('list')
     expect(listElement).toBeInTheDocument()
