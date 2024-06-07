@@ -1,17 +1,17 @@
-import { http, HttpResponse } from "msw";
+import { http, HttpResponse } from 'msw'
 
 export const handlers = [
-  http.get("https://jsonplaceholder.typicode.com/users", () => {
+  http.get('https://jsonplaceholder.typicode.com/users', () => {
     return HttpResponse.json([
       {
-        name: "bruce wayne",
+        name: 'bruce wayne',
       },
       {
-        name: "Clark Kent",
+        name: 'Clark Kent',
       },
       {
-        name: "Princess Diana",
+        name: 'Princess Diana',
       },
-    ]);
+    ])
   }),
-];
+]

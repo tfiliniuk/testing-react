@@ -1,6 +1,6 @@
-import "./App.css";
-import { AppProviders } from "./providers/app-providers";
-import { Users } from "./components/users/users";
+import './App.css'
+import { AppProviders } from './providers/app-providers'
+import { Users } from './components/users/users'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Users />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App
