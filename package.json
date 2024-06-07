@@ -14,6 +14,7 @@
         "@types/react-dom": "^18.3.0",
         "install": "^0.13.0",
         "npm": "^10.8.1",
+        "prettier": "^3.3.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-scripts": "5.0.1",
@@ -25,12 +26,15 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "lint": "eslint --ignore-path .gitignore .",
+        "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
         "coverage": "npm test --coverage --watchAll"
     },
     "eslintConfig": {
         "extends": [
             "react-app",
-            "react-app/jest"
+            "react-app/jest",
+            "plugin:jest-dom/recommended"
         ]
     },
     "browserslist": {
@@ -47,6 +51,7 @@
     },
     "devDependencies": {
         "@testing-library/react": "^16.0.0",
+        "eslint-plugin-jest-dom": "^5.4.0",
         "msw": "^2.3.1"
     }
 }
